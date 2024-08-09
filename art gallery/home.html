@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+#ab{
+    text-align: justify;
+    text-indent: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    line-height: 2em;
+}
+span{
+    font-size: xx-large;
+    margin: 15px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">ART GALLERY</div>
+        <ul class="nav-links">
+            <li><a href="#about"><i class="fa-solid fa-landmark"></i> About</a></li><br>
+                <li> <a href="event.html"><i class="fa-solid fa-calendar-days"></i> Event</a></li><br>
+                <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a> </li><br>
+                <li><a href="blog.html"> <i class="fa-solid fa-blog"></i> Blog</a></li><br>
+                <li> <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="banner">
+            <h1>Welcome to Our Museum</h1>
+        </div>
+        <div class="content">
+            <div class="box"id="about" >  <h2>Few Words About The Museum</h2><br>
+                
+            <p id="ab">Art is a creative activity. It produces a product, an object.
+                 Art is a diverse range of human activities in creating visual, performing subjects, and expressing the author's thoughts. 
+                 The product of art is called a work of art, for others to experience. 
+                A painting by Renoir is a work of art.
+                Art has been defined as a vehicle for the expression or communication of emotions and ideas, 
+                a means for exploring and appreciating formal elements for their own sake,
+                 and as mimesis or representation.</p></div>
+          
+          <div class="box"><img src="r1.jpg" class="responsive-img" width="1000px"></div></div>
+        <div class="content">
+            <div class="box"><span><i class="fa-solid fa-clock"></i></span>
+                <h2>Opening Time </h2><br>
+                <h4>Mon - Fri : 10.00 AM to 6.00PM <br><br>
+                Sat:12.00PM to 3.00 PM <br><br>
+                 Sunday:closed</h4></div>
+            <div class="box"> <span><i class="fa-regular fa-calendar-days"></i></span>
+                <h2>Upcoming Exhibition</h2><br>
+                <h4>Flora & Fauna</h4></div>
+            <div class="box">
+         <h2>Booking Tickets </h2><br>
+    <a href="event.html" ><span><i class="fa-solid fa-ticket"></i> Booking </span></a>
+    </div>
+        </div>
+    
+        <div class="footer">
+            <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+        </div>
+    </main>
+
+ 
+
+
+    <script>
+       const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(41,55,77);
+    color: whitesmoke;
+    line-height: 3em;
+    margin: 20px;
+}
+/* Basic styling for sections */
+section {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.event{
+    width: calc(45% - 5px);
+    margin:20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font: 1.5em sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 2em;
+    background-color:rgb(3,0,176);
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
+#new-booking-btn a{
+    color: whitesmoke;
+}
+button{
+    background-color: orangered;
+    padding: 15px;
+    margin: auto;
+    color: whitesmoke;
+    border: 2px solid orangered;}
+@media (max-width: 600px) {
+    .event {
+    width: calc(80% - 5px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font: 1em sans-serif;
+    color: whitesmoke;
+    line-height: 2em;
+}
+h3{
+ 
+    font-family: 'Courier New', Courier, monospace;
+    font: 1em sans-serif;
+  
+  }
+}
+.hidden {
+    display: none;
+}
+h3{
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+}
+h5{
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    background-color: blue;
+    border: 2px solid blue;
+}
+ label{
+    color: whitesmoke;
+    text-align: left;
+  
+}
+.event-image {
+   
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

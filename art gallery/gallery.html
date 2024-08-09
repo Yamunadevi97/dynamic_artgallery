@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">ART GALLERY</div>
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fa-solid fa-landmark"></i> About</a></li><br>
+                <li> <a href="event.html"><i class="fa-solid fa-calendar-days"></i> Event</a></li><br>
+                <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a> </li><br>
+                <li><a href="blog.html"> <i class="fa-solid fa-blog"></i> Blog</a></li><br>
+                <li> <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav><br>
+    <h1>IMAGE GALLERY</h1>
+    <div id="gallery">
+    <div class="container">       
+    <img src="p1.jpg" alt=""   width="300px" height="250px" id="container-element">
+    <img src="p2.jpg" alt=""   width="300px" height="250px" id="container-element">
+    <img src="p3.jpg" alt=""   width="300px" height="250px" id="container-element">
+    <img src="p4.jpg" alt=""   width="300px" height="250px" id="container-element">
+    <img src="p5.jpg" alt=""   width="300ppx" height="250px" id="container-element"> 
+    <img src="spring.jpg" alt="" width="300ppx" height="250px" id="container-element"> 
+     <img src="autumn.jpg" alt="" width="300ppx" height="250px" id="container-element"> 
+     <img src="cave.jpg" alt=""  width="300px" height="250px" id="container-element">
+     <img src="r1.jpg" alt=""   width="300px" height="250px" id="container-element">
+     <img src="r2.jpg" alt=""   width="300px" height="250px "id="container-element">
+     <img src="r3.jpg" alt=""   width="300px" height="250px" id="container-element">
+     <img src="r4.jpg" alt=""   width="300px" height="250px" id="container-element">
+     <img src="r5.jpg" alt=""   width="300px" height="250px" id="container-element">
+     <img src="r6.jpeg" alt=""   width="300px" height="250px" id="container-element">
+     <img src="r7.jpeg" alt=""   width="300px" height="250px" id="container-element">
+     <img src="r8.jpeg" alt=""   width="300px" height="250px" id="container-element"> 
+      <img src="acr.jpg" alt=""    width="300px" height="250px" id="container-element">
+     <img src="p2.jpg" alt=""   width="300px" height="250px" id="container-element">
+     <img src="r1.jpg" alt=""   width="300px" height="250px" id="container-element">
+     <img src="r2.jpg" alt=""   width="300px" height="250px "id="container-element">
+     </div>
+     <script>
+        const burger = document.querySelector('.burger');
+ const navLinks = document.querySelector('.nav-links');
+ 
+ burger.addEventListener('click', () => {
+     navLinks.classList.toggle('active');
+ });
+ document.getElementById('contactForm').addEventListener('submit', function(event) {
+     event.preventDefault();});
+    </script>
+</body>
+</html>

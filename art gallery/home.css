@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    height: auto;
+    background-color: #000000;
+    color: whitesmoke;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 97%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.navbar .company-name {
+    color: #f2f2f2;
+    font-size: 1.5em;
+    padding: 14px 0;
+}
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar .menu {
+    display: flex;
+}
+.banner {
+    width: 90%;
+    height: 600px;
+    background: url('h.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin:auto;
+    text-align: center;
+    margin-top: 60px; /* Adjust margin for fixed navbar */
+}
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.box {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #124feb;
+    text-align: center;
+}
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.contact-form {
+    flex: 1 1 300px;
+    padding: 20px;
+}
+input{
+    padding: 15px;
+    width: 100%;
+}
+textarea{
+    padding: 15px;
+    width: 100%;
+}
+.submit{
+    background-color: orangered;
+    color: whitesmoke;
+    border: 2px solid orangered;
+}
+.contact-image {
+    flex: 1 1 200px;
+    padding: 20px;
+}
+.contact-image img {
+    width: 100%;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .navbar .company-name {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar a {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .banner h1 {
+        font-size: 2em;
+    }
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font: 2em sans-serif;
+}
+#about{
+    background-color: rgb(140, 0, 255);
+}

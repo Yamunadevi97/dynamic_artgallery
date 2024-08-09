@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up </title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <img src="ma.jpg" alt="Avatar">
+            <img src="fe.jpg" alt="Avatar">
+        </div>
+        <form id="signupForm">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <span id="usernameError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+            <button type="button" onclick="validateForm()">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Log In!!!</a></p>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

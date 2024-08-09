@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="blog.css">
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">ART GALLERY</div>
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fa-solid fa-landmark"></i> About</a></li>
+                <li> <a href="event.html"><i class="fa-solid fa-calendar-days"></i> Event</a></li>
+                <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a> </li>
+                <li><a href="blog.html"> <i class="fa-solid fa-blog"></i> Blog</a></li>
+                <li> <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+  
+    <main>
+        <section class="blog-cards">
+            <article class="card">
+                <img src="matte.jpg" title="oil painting" width="200px" height="150px">
+                <div class="card-content">
+                    <h4>Posted on 1<sup>st</sup> Jan 2024</h4>
+                    <h3 id="b">canvas oil painting</h3>
+                    <h4 id="describe">Oil painting is a type of painting produced using oil-based paints. Oil painting involves using pigments that use a medium of drying oil as the binder and painting with them on a canvas. </h4>
+               
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="acr.jpg" title="oil painting" width="200px" height="150px">
+                    <h4>Posted on 21<sup>st</sup> Jan 2024</h4>
+                    <h3 id="b">Northern light Acrylic  </h3>
+                    <h4 id="describe">Acrylic paint is a water-based, fast-drying type of paint made of pigment suspended in acrylic polymer emulsion. Acrylics are water-soluble, but when dry, they become water-resistant. </h4>
+                         
+                </div>
+            </article>
+            <article class="card">
+                <img src="ra.jpg" title="oil painting" width="200px" height="150px">
+                    <h4>Posted on 23<sup>rd</sup> Jan 2024</h4>
+                    <h3 id="b">Radha Krishna Modern  </h3>
+                    <h4 id="describe"> Modern Art  was characterized by a shift away from traditional styles to a more abstract, experimental approach to creating works of art. </h4>
+                    </div>
+            </article>
+            <section class="blog-cards">
+            <article class="card">
+                <img src="af.jpg" title="oil painting" width="200px" height="150px">
+                <h4>Posted on 30<sup>th</sup> Jan 2024</h4>
+                <h3 id="b"> Aluminium Canvas</h3>
+                <h4 id="describe"> African art encompasses the diverse and rich visual expressions originating from native Africa, with a primary focus on sub-Saharan Africa. </h4>
+              </div>
+            </article>
+            <article class="card">
+                <img src="acr.jpg" title="oil painting" width="200px" height="150px">
+                    <h4>Posted on 21<sup>st</sup> Jan 2024</h4>
+                    <h3 id="b">Northern light Acrylic  </h3>
+                    <h4 id="describe">Acrylic paint is a water-based, fast-drying type of paint made of pigment suspended in acrylic polymer emulsion. Acrylics are water-soluble, but when dry, they become water-resistant. </h4>
+                         
+                </div>
+            </article>
+            <article class="card">
+                <img src="af.jpg" title="oil painting" width="200px" height="150px">
+                <h4>Posted on 30<sup>th</sup> Jan 2024</h4>
+                <h3 id="b"> Aluminium Canvas  </h3>
+                <h4 class="describe"> African art encompasses the diverse and rich visual expressions originating from native Africa, with a primary focus on sub-Saharan Africa. </h4>
+              </div>
+            </article>
+
+            <!-- Add more cards as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Art Gallery</p>
+    </footer>
+
+
+    <script>
+        const burger = document.querySelector('.burger');
+ const navLinks = document.querySelector('.nav-links');
+ 
+ burger.addEventListener('click', () => {
+     navLinks.classList.toggle('active');
+ });
+ document.getElementById('contactForm').addEventListener('submit', function(event) {
+     event.preventDefault();});
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+#ab{
+    text-align: justify;
+    text-indent: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    line-height: 2em;
+}
+span{
+    font-size: xx-large;
+    margin: 15px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">ART GALLERY</div>
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fa-solid fa-landmark"></i> About</a></li><br>
+                <li> <a href="event.html"><i class="fa-solid fa-calendar-days"></i> Event</a></li><br>
+                <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a> </li><br>
+                <li><a href="blog.html"> <i class="fa-solid fa-blog"></i> Blog</a></li><br>
+                <li> <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="contact-section" id="contact">
+            <div class="contact-form">
+                <h2>Contact Us</h2><br><br>
+                <form>
+                    <label for="name">Name:</label><br><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label><br><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br><br>
+                    <textarea id="message" name="message" required></textarea><br><br>
+                  <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+            
+        </div>
+    
+    
+        <div class="footer">
+            <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+        </div>
+    </main>
+
+ 
+
+
+    <script>
+       const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+    </script>
+  
+</body>
+</html>
