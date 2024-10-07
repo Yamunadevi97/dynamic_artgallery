@@ -39,7 +39,7 @@ function validateForm() {
 
     if (isValid) {
         // Redirect to homepage
-        window.location.href = "home.html"; // Replace with your homepage URL
+        window.location.href = "index.html"; // Replace with your homepage URL
     }
 
     return false; // Prevent form submission for demonstration purposes
